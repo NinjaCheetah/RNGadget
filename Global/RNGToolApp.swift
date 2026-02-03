@@ -38,7 +38,7 @@ enum OpenWindows: String, CaseIterable {
     case Update = "Update"
 
     func open(){
-        if let url = URL(string: "rngtool://\(self.rawValue)") {
+        if let url = URL(string: "rngadget://\(self.rawValue)") {
             NSWorkspace.shared.open(url)
         }
     }
