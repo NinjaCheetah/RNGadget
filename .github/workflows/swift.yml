@@ -19,20 +19,20 @@ jobs:
     - name: Build
       id: build
       run: |
-        sudo xcode-select --switch /Applications/Xcode_16.2.app
-        xcodebuild -project "RNGTool.xcodeproj/" -destination "generic/platform=macOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO
+        sudo xcode-select --switch /Applications/Xcode_26.2.app
+        xcodebuild -project "RNGadget.xcodeproj/" -destination "generic/platform=macOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO
     - name: Package DMG
       run: |
         mkdir Packaging/source_folder
-        mv build/Debug/RNGTool.app Packaging/source_folder
+        mv build/Debug/RNGadget.app Packaging/source_folder
         cd Packaging/
         chmod +x create-dmg.sh
         ./create-dmg.sh
     - name: Publish Build Files
       uses: actions/upload-artifact@v4
       with:
-        path: Packaging/RNGTool-Installer.dmg
-        name: RNGTool-Installer-latest.dmg
+        path: Packaging/RNGadget-Installer.dmg
+        name: RNGadget-Installer-latest.dmg
 
   build-ios:
 
@@ -42,19 +42,19 @@ jobs:
     - name: Build for iOS
       id: build-ios
       run: |
-        sudo xcode-select --switch /Applications/Xcode_16.2.app
-        xcodebuild -project "RNGTool.xcodeproj/" -target "RNGTool Mobile" -destination "generic/platform=iOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO
+        sudo xcode-select --switch /Applications/Xcode_26.2.app
+        xcodebuild -project "RNGadget.xcodeproj/" -target "RNGTool Mobile" -destination "generic/platform=iOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO
     - name: Prepare Files and Create IPA File
       run: |
-        mkdir ~/RNGToolMobile
-        mkdir ~/RNGToolMobile/Payload
-        mv build/Debug-iphoneos/RNGTool.app ~/RNGToolMobile/Payload
-        cp Packaging/iTunesArtwork ~/RNGToolMobile/iTunesArtwork
-        cd ~/RNGToolMobile/
-        zip -r RNGTool.zip *
-        mv RNGTool.zip ~/RNGTool.ipa
+        mkdir ~/RNGadgetMobile
+        mkdir ~/RNGadgetMobile/Payload
+        mv build/Debug-iphoneos/RNGadget.app ~/RNGadgetMobile/Payload
+        cp Packaging/iTunesArtwork ~/RNGadgetMobile/iTunesArtwork
+        cd ~/RNGadgetMobile/
+        zip -r RNGadget.zip *
+        mv RNGadget.zip ~/RNGadget.ipa
     - name: Publish Build Files
       uses: actions/upload-artifact@v4
       with:
-        path: ~/RNGTool.ipa
-        name: RNGTool-latest.ipa
+        path: ~/RNGadget.ipa
+        name: RNGadget-latest.ipa
