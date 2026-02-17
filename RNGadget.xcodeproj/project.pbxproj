@@ -61,7 +61,7 @@
 		3700F28326DD2573001BEE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3700F28626DD2573001BEE7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3700F28826DD2573001BEE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3700F28926DD2573001BEE7A /* RNGTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RNGTool.entitlements; sourceTree = "<group>"; };
+		3700F28926DD2573001BEE7A /* RNGadget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RNGadget.entitlements; sourceTree = "<group>"; };
 		3707EC442788711200E48CFA /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		371A2FF02777A7A500B94F66 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		3725BF7727697DC900A1B4E8 /* RNGadget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNGadget.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,7 +174,7 @@
 				3759793D27E568BF0013D365 /* UpdateCheck.swift */,
 				3700F28326DD2573001BEE7A /* Assets.xcassets */,
 				3700F28826DD2573001BEE7A /* Info.plist */,
-				3700F28926DD2573001BEE7A /* RNGTool.entitlements */,
+				3700F28926DD2573001BEE7A /* RNGadget.entitlements */,
 				3700F28526DD2573001BEE7A /* Preview Content */,
 			);
 			path = RNGadget;
@@ -507,7 +507,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = RNGTool/RNGTool.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RNGadget/RNGadget.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -543,7 +543,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
-				CODE_SIGN_ENTITLEMENTS = RNGTool/RNGTool.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RNGadget/RNGadget.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;

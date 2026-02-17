@@ -20,7 +20,7 @@ jobs:
       id: build
       run: |
         sudo xcode-select --switch /Applications/Xcode_26.2.app
-        xcodebuild -project "RNGadget.xcodeproj/" -destination "generic/platform=macOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO
+        xcodebuild -project "RNGadget.xcodeproj/" -destination "generic/platform=macOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO
     - name: Package DMG
       run: |
         mkdir Packaging/source_folder
@@ -43,7 +43,7 @@ jobs:
       id: build-ios
       run: |
         sudo xcode-select --switch /Applications/Xcode_26.2.app
-        xcodebuild -project "RNGadget.xcodeproj/" -target "RNGTool Mobile" -destination "generic/platform=iOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO
+        xcodebuild -project "RNGadget.xcodeproj/" -target "RNGadget Mobile" -destination "generic/platform=iOS" -configuration Debug build CODE_SIGNING_ALLOWED=NO ONLY_ACTIVE_ARCH=NO
     - name: Prepare Files and Create IPA File
       run: |
         mkdir ~/RNGadgetMobile
