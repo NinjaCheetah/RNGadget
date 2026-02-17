@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
 
 # Since create-dmg does not clobber, be sure to delete previous DMG
-[[ -f RNGTool-Installer.dmg ]] && rm RNGTool-Installer.dmg
+[[ -f RNGadget-Installer.dmg ]] && rm RNGadget-Installer.dmg
 
 # Create the DMG
 create-dmg \
-  --volname "RNGTool Installer" \
-  --volicon "RNGToolDMG.icns" \
+  --volname "RNGadget Installer" \
+  --volicon "RNGadgetDMG.icns" \
   --background "background.png" \
   --window-pos 200 120 \
   --window-size 500 375 \
   --icon-size 80 \
-  --icon "RNGTool.app" 125 175 \
-  --hide-extension "RNGTool.app" \
+  --icon "RNGadget.app" 125 175 \
+  --hide-extension "RNGadget.app" \
   --app-drop-link 375 175 \
-  "RNGTool-Installer.dmg" \
+  "RNGadget-Installer.dmg" \
   "source_folder/"

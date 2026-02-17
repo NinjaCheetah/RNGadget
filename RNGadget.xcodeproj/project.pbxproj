@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3700F28226DD256D001BEE7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3700F28126DD256D001BEE7A /* ContentView.swift */; };
+		3700F28426DD2573001BEE7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3700F28326DD2573001BEE7A /* Assets.xcassets */; };
+		3700F28726DD2573001BEE7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3700F28626DD2573001BEE7A /* Preview Assets.xcassets */; };
+		3707EC452788711200E48CFA /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3707EC442788711200E48CFA /* History.swift */; };
+		371A2FF12777A7A500B94F66 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371A2FF02777A7A500B94F66 /* History.swift */; };
+		3725BF7C27697DC900A1B4E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3725BF7B27697DC900A1B4E8 /* ContentView.swift */; };
+		3725BF8127697DCC00A1B4E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3725BF8027697DCC00A1B4E8 /* Preview Assets.xcassets */; };
+		37515D472E2A0A8D00C9D13B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3700F28326DD2573001BEE7A /* Assets.xcassets */; };
+		3759793E27E568BF0013D365 /* UpdateCheck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3759793D27E568BF0013D365 /* UpdateCheck.swift */; };
+		375C2A0B2778055E00904A03 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375C2A0A2778055E00904A03 /* Launch Screen.storyboard */; };
+		37688CDD27713837003B64CB /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37688CDC27713837003B64CB /* About.swift */; };
+		376FEADF276980B700571A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3700F28326DD2573001BEE7A /* Assets.xcassets */; };
+		376FEAEF27698D1600571A78 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FEAEE27698D1600571A78 /* SettingsView.swift */; };
+		3780887A2D76859F00C32D35 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376FEAEE27698D1600571A78 /* SettingsView.swift */; };
+		37A8B4D6278A8EF600A4D08F /* DevMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A8B4D5278A8EF600A4D08F /* DevMode.swift */; };
+		37DB700126FC01EE0079F3E7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DB700026FC01EE0079F3E7 /* SettingsView.swift */; };
+		37E2B7192D61347F007A91C5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E2B7182D61347F007A91C5 /* ContentView.swift */; };
+		37E9F43C28C0265E0098037D /* RNGadgetWrist-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 37E9F43B28C0223C0098037D /* RNGadgetWrist-Info.plist */; };
+		37F5720F27A8BA7F007D29FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F5720E27A8BA7F007D29FB /* Preview Assets.xcassets */; };
+		37F5721327A8BA7F007D29FB /* RNGadget.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 37F571F827A8BA7A007D29FB /* RNGadget.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37F5721D27A8BB7F007D29FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3700F28326DD2573001BEE7A /* Assets.xcassets */; };
+		37F5722727A8C3CD007D29FB /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37688CDC27713837003B64CB /* About.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F059172E1B3EEA00D5C47A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3794432926D912B500900842 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F571F727A8BA7A007D29FB;
+			remoteInfo = RNGToolWrist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37F5721B27A8BA7F007D29FB /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				37F5721327A8BA7F007D29FB /* RNGadget.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3700F27D26DD256D001BEE7A /* RNGadget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNGadget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3700F28126DD256D001BEE7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3700F28326DD2573001BEE7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3700F28626DD2573001BEE7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3700F28826DD2573001BEE7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3700F28926DD2573001BEE7A /* RNGTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RNGTool.entitlements; sourceTree = "<group>"; };
+		3707EC442788711200E48CFA /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		371A2FF02777A7A500B94F66 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		3725BF7727697DC900A1B4E8 /* RNGadget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNGadget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3725BF7B27697DC900A1B4E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3725BF8027697DCC00A1B4E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3731BC1F2829E90D00E5F9D2 /* RNGadget Mobile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RNGadget Mobile.entitlements"; sourceTree = "<group>"; };
+		37515D3C2E2A0A3300C9D13B /* RNGadget TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNGadget TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3759793D27E568BF0013D365 /* UpdateCheck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateCheck.swift; sourceTree = "<group>"; };
+		3759793F27E56AF30013D365 /* RNGadgetWrist WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RNGadgetWrist WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		375C2A0A2778055E00904A03 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		37688CDC27713837003B64CB /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		376FEAEE27698D1600571A78 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		37A8B4D5278A8EF600A4D08F /* DevMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevMode.swift; sourceTree = "<group>"; };
+		37BF55BC280C949F002425B2 /* RNGadget-Mobile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "RNGadget-Mobile-Info.plist"; path = "../RNGadget-Mobile-Info.plist"; sourceTree = "<group>"; };
+		37DB700026FC01EE0079F3E7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		37E2B7182D61347F007A91C5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37E9F43B28C0223C0098037D /* RNGadgetWrist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RNGadgetWrist-Info.plist"; sourceTree = "<group>"; };
+		37F571F827A8BA7A007D29FB /* RNGadget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNGadget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F5720E27A8BA7F007D29FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37F5721027A8BA7F007D29FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		379EBFC72E3DA49100899970 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Settings/NumberSettings.swift,
+			);
+			target = 3725BF7627697DC900A1B4E8 /* RNGadget Mobile */;
+		};
+		379EBFC82E3DA49100899970 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RNGToolCommands.swift,
+				Settings/NumberSettings.swift,
+			);
+			target = 37F571F727A8BA7A007D29FB /* RNGadgetWrist */;
+		};
+		379EBFC92E3DA49100899970 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Advanced Explainers/DealerExplainer.swift",
+				"Basic Explainers/CardExplainer.swift",
+				"Basic Explainers/CoinExplainer.swift",
+				"Basic Explainers/DiceExplainer.swift",
+				"Basic Explainers/MarbleExplainer.swift",
+				"Basic Explainers/NumberExplainer.swift",
+				Components/GlobalViews.swift,
+				Settings/SettingsData.swift,
+				Utilities.swift,
+			);
+			target = 37515D3B2E2A0A3300C9D13B /* RNGadget TV */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		370483622E35839000A5F2C4 /* Modes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Modes; sourceTree = "<group>"; };
+		370483692E35839300A5F2C4 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+		371023492E38772A0023EB6C /* Advanced Modes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Advanced Modes"; sourceTree = "<group>"; };
+		37515D3D2E2A0A3300C9D13B /* RNGadget TV */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "RNGadget TV"; sourceTree = "<group>"; };
+		379EBF8E2E3DA49100899970 /* Global */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (379EBFC72E3DA49100899970 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 379EBFC82E3DA49100899970 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, 379EBFC92E3DA49100899970 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = Global; sourceTree = "<group>"; };
+		37D7E6552E3E9B930057A24F /* Advanced Modes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Advanced Modes"; sourceTree = "<group>"; };
+		37E20E102E2F2BF200E8C2A7 /* Basic Modes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Basic Modes"; sourceTree = "<group>"; };
+		37E20E192E2F2BF800E8C2A7 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+		37E20E222E2F3B9200E8C2A7 /* Basic Modes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Basic Modes"; sourceTree = "<group>"; };
+		37E20E292E2F3B9600E8C2A7 /* Components */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Components; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3700F27A26DD256D001BEE7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3725BF7427697DC900A1B4E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37515D392E2A0A3300C9D13B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F571FD27A8BA7D007D29FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3700F27E26DD256D001BEE7A /* RNGadget */ = {
+			isa = PBXGroup;
+			children = (
+				37D7E6552E3E9B930057A24F /* Advanced Modes */,
+				37E20E292E2F3B9600E8C2A7 /* Components */,
+				37E20E222E2F3B9200E8C2A7 /* Basic Modes */,
+				3700F28126DD256D001BEE7A /* ContentView.swift */,
+				371A2FF02777A7A500B94F66 /* History.swift */,
+				37DB700026FC01EE0079F3E7 /* SettingsView.swift */,
+				3759793D27E568BF0013D365 /* UpdateCheck.swift */,
+				3700F28326DD2573001BEE7A /* Assets.xcassets */,
+				3700F28826DD2573001BEE7A /* Info.plist */,
+				3700F28926DD2573001BEE7A /* RNGTool.entitlements */,
+				3700F28526DD2573001BEE7A /* Preview Content */,
+			);
+			path = RNGadget;
+			sourceTree = "<group>";
+		};
+		3700F28526DD2573001BEE7A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3700F28626DD2573001BEE7A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3725BF7827697DC900A1B4E8 /* RNGadget Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				371023492E38772A0023EB6C /* Advanced Modes */,
+				37E20E192E2F2BF800E8C2A7 /* Components */,
+				37E20E102E2F2BF200E8C2A7 /* Basic Modes */,
+				37688CDC27713837003B64CB /* About.swift */,
+				3725BF7B27697DC900A1B4E8 /* ContentView.swift */,
+				37A8B4D5278A8EF600A4D08F /* DevMode.swift */,
+				3707EC442788711200E48CFA /* History.swift */,
+				376FEAEE27698D1600571A78 /* SettingsView.swift */,
+				375C2A0A2778055E00904A03 /* Launch Screen.storyboard */,
+				3731BC1F2829E90D00E5F9D2 /* RNGadget Mobile.entitlements */,
+				37BF55BC280C949F002425B2 /* RNGadget-Mobile-Info.plist */,
+				3725BF7F27697DCC00A1B4E8 /* Preview Content */,
+			);
+			path = "RNGadget Mobile";
+			sourceTree = "<group>";
+		};
+		3725BF7F27697DCC00A1B4E8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3725BF8027697DCC00A1B4E8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3794432826D912B500900842 = {
+			isa = PBXGroup;
+			children = (
+				379EBF8E2E3DA49100899970 /* Global */,
+				3700F27E26DD256D001BEE7A /* RNGadget */,
+				3725BF7827697DC900A1B4E8 /* RNGadget Mobile */,
+				37F5720427A8BA7D007D29FB /* RNGadgetWrist WatchKit Extension */,
+				37515D3D2E2A0A3300C9D13B /* RNGadget TV */,
+				379A29ED2D5EB0C000A90C5C /* Frameworks */,
+				3794433226D912B500900842 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3794433226D912B500900842 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3700F27D26DD256D001BEE7A /* RNGadget.app */,
+				3725BF7727697DC900A1B4E8 /* RNGadget.app */,
+				37F571F827A8BA7A007D29FB /* RNGadget.app */,
+				37515D3C2E2A0A3300C9D13B /* RNGadget TV.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		379A29ED2D5EB0C000A90C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37F5720427A8BA7D007D29FB /* RNGadgetWrist WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				370483692E35839300A5F2C4 /* Components */,
+				370483622E35839000A5F2C4 /* Modes */,
+				37E2B7182D61347F007A91C5 /* ContentView.swift */,
+				3759793F27E56AF30013D365 /* RNGadgetWrist WatchKit Extension.entitlements */,
+				37F5721027A8BA7F007D29FB /* Info.plist */,
+				37E9F43B28C0223C0098037D /* RNGadgetWrist-Info.plist */,
+				37F5720D27A8BA7F007D29FB /* Preview Content */,
+			);
+			path = "RNGadgetWrist WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		37F5720D27A8BA7F007D29FB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37F5720E27A8BA7F007D29FB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3700F27C26DD256D001BEE7A /* RNGadget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3700F28C26DD2573001BEE7A /* Build configuration list for PBXNativeTarget "RNGadget" */;
+			buildPhases = (
+				3700F27926DD256D001BEE7A /* Sources */,
+				3700F27A26DD256D001BEE7A /* Frameworks */,
+				3700F27B26DD256D001BEE7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				379EBF8E2E3DA49100899970 /* Global */,
+				37D7E6552E3E9B930057A24F /* Advanced Modes */,
+				37E20E222E2F3B9200E8C2A7 /* Basic Modes */,
+				37E20E292E2F3B9600E8C2A7 /* Components */,
+			);
+			name = RNGadget;
+			productName = RNGTool;
+			productReference = 3700F27D26DD256D001BEE7A /* RNGadget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3725BF7627697DC900A1B4E8 /* RNGadget Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3725BF8427697DCC00A1B4E8 /* Build configuration list for PBXNativeTarget "RNGadget Mobile" */;
+			buildPhases = (
+				3725BF7327697DC900A1B4E8 /* Sources */,
+				3725BF7427697DC900A1B4E8 /* Frameworks */,
+				3725BF7527697DC900A1B4E8 /* Resources */,
+				37F5721B27A8BA7F007D29FB /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F059182E1B3EEA00D5C47A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				371023492E38772A0023EB6C /* Advanced Modes */,
+				379EBF8E2E3DA49100899970 /* Global */,
+				37E20E102E2F2BF200E8C2A7 /* Basic Modes */,
+				37E20E192E2F2BF800E8C2A7 /* Components */,
+			);
+			name = "RNGadget Mobile";
+			productName = "RNGTool Mobile";
+			productReference = 3725BF7727697DC900A1B4E8 /* RNGadget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37515D3B2E2A0A3300C9D13B /* RNGadget TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37515D462E2A0A3400C9D13B /* Build configuration list for PBXNativeTarget "RNGadget TV" */;
+			buildPhases = (
+				37515D382E2A0A3300C9D13B /* Sources */,
+				37515D392E2A0A3300C9D13B /* Frameworks */,
+				37515D3A2E2A0A3300C9D13B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				37515D3D2E2A0A3300C9D13B /* RNGadget TV */,
+			);
+			name = "RNGadget TV";
+			packageProductDependencies = (
+			);
+			productName = "RNGTool TV";
+			productReference = 37515D3C2E2A0A3300C9D13B /* RNGadget TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37F571F727A8BA7A007D29FB /* RNGadgetWrist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F5721827A8BA7F007D29FB /* Build configuration list for PBXNativeTarget "RNGadgetWrist" */;
+			buildPhases = (
+				37F571F627A8BA7A007D29FB /* Resources */,
+				37F571FC27A8BA7D007D29FB /* Sources */,
+				37F571FD27A8BA7D007D29FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				370483622E35839000A5F2C4 /* Modes */,
+				370483692E35839300A5F2C4 /* Components */,
+				379EBF8E2E3DA49100899970 /* Global */,
+			);
+			name = RNGadgetWrist;
+			productName = RNGToolWrist;
+			productReference = 37F571F827A8BA7A007D29FB /* RNGadget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3794432926D912B500900842 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					3700F27C26DD256D001BEE7A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					3725BF7627697DC900A1B4E8 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					37515D3B2E2A0A3300C9D13B = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					37F571F727A8BA7A007D29FB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3794432C26D912B500900842 /* Build configuration list for PBXProject "RNGadget" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3794432826D912B500900842;
+			productRefGroup = 3794433226D912B500900842 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3700F27C26DD256D001BEE7A /* RNGadget */,
+				3725BF7627697DC900A1B4E8 /* RNGadget Mobile */,
+				37F571F727A8BA7A007D29FB /* RNGadgetWrist */,
+				37515D3B2E2A0A3300C9D13B /* RNGadget TV */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3700F27B26DD256D001BEE7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3700F28726DD2573001BEE7A /* Preview Assets.xcassets in Resources */,
+				3700F28426DD2573001BEE7A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3725BF7527697DC900A1B4E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				375C2A0B2778055E00904A03 /* Launch Screen.storyboard in Resources */,
+				376FEADF276980B700571A78 /* Assets.xcassets in Resources */,
+				3725BF8127697DCC00A1B4E8 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37515D3A2E2A0A3300C9D13B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37515D472E2A0A8D00C9D13B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F571F627A8BA7A007D29FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E9F43C28C0265E0098037D /* RNGadgetWrist-Info.plist in Resources */,
+				37F5720F27A8BA7F007D29FB /* Preview Assets.xcassets in Resources */,
+				37F5721D27A8BB7F007D29FB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3700F27926DD256D001BEE7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				371A2FF12777A7A500B94F66 /* History.swift in Sources */,
+				3700F28226DD256D001BEE7A /* ContentView.swift in Sources */,
+				37DB700126FC01EE0079F3E7 /* SettingsView.swift in Sources */,
+				3759793E27E568BF0013D365 /* UpdateCheck.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3725BF7327697DC900A1B4E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				376FEAEF27698D1600571A78 /* SettingsView.swift in Sources */,
+				3725BF7C27697DC900A1B4E8 /* ContentView.swift in Sources */,
+				37A8B4D6278A8EF600A4D08F /* DevMode.swift in Sources */,
+				3707EC452788711200E48CFA /* History.swift in Sources */,
+				37688CDD27713837003B64CB /* About.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37515D382E2A0A3300C9D13B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F571FC27A8BA7D007D29FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3780887A2D76859F00C32D35 /* SettingsView.swift in Sources */,
+				37E2B7192D61347F007A91C5 /* ContentView.swift in Sources */,
+				37F5722727A8C3CD007D29FB /* About.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37F059182E1B3EEA00D5C47A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 37F571F727A8BA7A007D29FB /* RNGadgetWrist */;
+			targetProxy = 37F059172E1B3EEA00D5C47A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3700F28A26DD2573001BEE7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = RNGTool/RNGTool.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 208;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"RNGTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				INFOPLIST_FILE = RNGTool/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3700F28B26DD2573001BEE7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = RNGTool/RNGTool.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 208;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"RNGTool/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				INFOPLIST_FILE = RNGTool/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3725BF8227697DCC00A1B4E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = "RNGadget Mobile/RNGadget Mobile.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 90;
+				DEVELOPMENT_ASSET_PATHS = "\"RNGadget Mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNGadget-Mobile-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2026 NinjaCheetah";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget;
+				PRODUCT_NAME = RNGadget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3725BF8327697DCC00A1B4E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = "RNGadget Mobile/RNGadget Mobile.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 90;
+				DEVELOPMENT_ASSET_PATHS = "\"RNGadget Mobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNGadget-Mobile-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2026 NinjaCheetah";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget;
+				PRODUCT_NAME = RNGadget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37515D442E2A0A3400C9D13B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+			};
+			name = Debug;
+		};
+		37515D452E2A0A3400C9D13B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 18.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3794434226D912BB00900842 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3794434326D912BB00900842 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		37F5721927A8BA7F007D29FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = "RNGadgetWrist WatchKit Extension/RNGadgetWrist WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 90;
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNGadgetWrist-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2026 NinjaCheetah";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.ninjacheetah.RNGadget;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget.watchextension;
+				PRODUCT_NAME = RNGadget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		37F5721A27A8BA7F007D29FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_ENTITLEMENTS = "RNGadgetWrist WatchKit Extension/RNGadgetWrist WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 90;
+				DEVELOPMENT_TEAM = 5GF7GKNTK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "RNGadgetWrist-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = RNGadget;
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022-2026 NinjaCheetah";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = dev.ninjacheetah.RNGadget;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 3.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.ninjacheetah.RNGadget.watchextension;
+				PRODUCT_NAME = RNGadget;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3700F28C26DD2573001BEE7A /* Build configuration list for PBXNativeTarget "RNGadget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3700F28A26DD2573001BEE7A /* Debug */,
+				3700F28B26DD2573001BEE7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3725BF8427697DCC00A1B4E8 /* Build configuration list for PBXNativeTarget "RNGadget Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3725BF8227697DCC00A1B4E8 /* Debug */,
+				3725BF8327697DCC00A1B4E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37515D462E2A0A3400C9D13B /* Build configuration list for PBXNativeTarget "RNGadget TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37515D442E2A0A3400C9D13B /* Debug */,
+				37515D452E2A0A3400C9D13B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3794432C26D912B500900842 /* Build configuration list for PBXProject "RNGadget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3794434226D912BB00900842 /* Debug */,
+				3794434326D912BB00900842 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F5721827A8BA7F007D29FB /* Build configuration list for PBXNativeTarget "RNGadgetWrist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F5721927A8BA7F007D29FB /* Debug */,
+				37F5721A27A8BA7F007D29FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3794432926D912B500900842 /* Project object */;
+}
